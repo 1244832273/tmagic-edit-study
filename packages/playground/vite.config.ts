@@ -42,7 +42,7 @@ export default defineConfig({
   ],
   
 
-  base: '/packages/playground',
+  base: '/',
 
   resolve: {
     alias: [

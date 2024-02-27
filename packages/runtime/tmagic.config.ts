@@ -4,7 +4,7 @@ import { defineConfig } from '@tmagic/cli';
 
 export default defineConfig({
   packages: [
-    path.join(__dirname, '../../components'),
+    path.join(__dirname, '../components'),
     '@tmagic/ui', 
   ],
   componentFileAffix: '.vue',

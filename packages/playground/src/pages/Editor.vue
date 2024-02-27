@@ -198,7 +198,7 @@ const moveableOptions = (config?: CustomizeMoveableOptionsCallbackConfig): Movea
 };
 
 const save = () => {
-  console.log("🚀 ~ value:", toRaw(value.value))
+  console.log("🚀 ~ 保存dsl:", toRaw(value.value))
   localStorage.setItem(
     'magicDSL',
     serialize(toRaw(value.value), {
@@ -208,7 +208,7 @@ const save = () => {
   );
   editor.value?.editorService.resetModifiedNodeId();
 };
-console.log('VITE_ENTRY_PATH', VITE_ENTRY_PATH)
+
 asyncLoadJs(`${VITE_ENTRY_PATH}/config/index.umd.cjs`).then(() => {
   propsConfigs.value = (globalThis as any).magicPresetConfigs;
 });

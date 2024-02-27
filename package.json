@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "bootstrap": "pnpm i && pnpm build",
-    "build": "pnpm --filter \"@tmagic/*\" build",
-    "playground": "pnpm --filter \"runtime-vue3\" build:libs && pnpm --filter \"runtime-vue3\" --filter \"tmagic-playground\" dev"
+    "build": "pnpm --filter \"@dofun/*\" build",
+    "playground": "pnpm --filter \"@dofun/runtime-vue3\" build:libs && pnpm --filter \"@dofun/runtime-vue3\" --filter \"@dofun/playground\" dev"
   },
   "keywords": [],
   "author": "",

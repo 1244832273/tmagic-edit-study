@@ -41,7 +41,7 @@ export default defineConfig(({ mode }) => {
         sourcemap: true,
         minify: false,
         target: 'esnext',
-        outDir: `../../playground/public/entry/vue3/${fileName}`,
+        outDir: `../playground/public/entry/vue3/${fileName}`,
 
         lib: {
           entry: `.tmagic/${fileName}-entry.ts`,
@@ -68,12 +68,12 @@ export default defineConfig(({ mode }) => {
 
       publicDir: '../public',
 
-      base: `/packages/playground/runtime/vue3/${mode}`,
+      base: `/runtime/vue3/${mode}`,
 
       build: {
         emptyOutDir: true,
         sourcemap: true,
-        outDir: path.resolve(process.cwd(), `../../playground/public/runtime/vue3/${mode}`),
+        outDir: path.resolve(process.cwd(), `../playground/public/runtime/vue3/${mode}`),
       },
     };
   }
