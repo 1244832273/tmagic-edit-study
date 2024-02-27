@@ -4,17 +4,30 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "bootstrap": "pnpm i && pnpm build",
+    "build": "pnpm --filter \"@tmagic/*\" build",
+    "playground": "pnpm --filter \"runtime-vue3\" build:libs && pnpm --filter \"runtime-vue3\" --filter \"tmagic-playground\" dev"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/node": "^18.19.0",
+    "@vitejs/plugin-vue": "^4.5.2",
     "eslint": "^8.56.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-prettier": "^5.1.3",
     "eslint-plugin-simple-import-sort": "^12.0.0",
     "eslint-plugin-vue": "^9.21.1",
-    "prettier": "^3.2.5"
+    "prettier": "^3.2.5",
+    "typescript": "^5.0.4",
+    "vite": "^5.0.7",
+    "vitepress": "1.0.0-rc.31",
+    "vitest": "^1.0.4",
+    "vue": "^3.3.8"
+  },
+  "devDependencies": {
+    "husky": "^9.0.11",
+    "rimraf": "^5.0.5"
   }
 }
