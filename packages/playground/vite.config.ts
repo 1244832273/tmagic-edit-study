@@ -70,7 +70,6 @@ export default defineConfig({
         prependPath: false,
       },
     },
-    open: '/packages/playground',
   },
 
   preview: {

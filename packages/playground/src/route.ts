@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHashHistory } from 'vue-router';
 
 import Editor from './pages/Editor.vue';
 import Form from './pages/Form.vue';
@@ -31,6 +31,6 @@ const routes = [
 ];
 
 export default createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes,
 });

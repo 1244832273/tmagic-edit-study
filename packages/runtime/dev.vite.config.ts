@@ -28,6 +28,15 @@ export default defineConfig({
   resolve: {
     alias: [
       { find: /^vue$/, replacement: path.join(__dirname, 'node_modules/vue/dist/vue.esm-bundler.js') },
+      {
+        find: /^@tmagic\/utils\/resetcss.css/,
+        replacement: path.join(__dirname, 'node_modules/@tmagic/utils/src/resetcss.css'),
+      },
+      { find: /^@tmagic\/utils/, replacement: path.join(__dirname, 'node_modules/@tmagic/utils/src/index.ts') },
+      { find: /^@tmagic\/core/, replacement: path.join(__dirname, 'node_modules/@tmagic/core/src/index.ts') },
+      { find: /^@tmagic\/data-source/, replacement: path.join(__dirname, 'node_modules/@tmagic/data-source/src/index.ts') },
+      { find: /^@data-source/, replacement: path.join(__dirname, 'node_modules/@tmagic/data-source/src') },
+      { find: /^@tmagic\/schema/, replacement: path.join(__dirname, 'node_modules/@tmagic/schema/src/index.ts') },
     ],
   },
 
