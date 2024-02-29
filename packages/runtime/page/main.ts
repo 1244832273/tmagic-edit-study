@@ -33,7 +33,7 @@ import { getLocalConfig } from './utils';
 import '@tmagic/utils/resetcss.css';
 
 // todo test DSL
-// import './page-config.js';
+import './page-config.js';
 
 const magicApp = createApp(AppComponent);
 
